@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+}
+.auth{
+  display: flex;
+  flex-direction: row;
+ justify-content: end;
+}
+.authBtn:hover {
+  border-bottom: 2px solid blue;
+}
+button{
+  white-space: nowrap;
+}
+#social-links {
+  font-size: 25px;
+  margin-left: 0%;
+  margin-right: 2em;
+}
+
+#social-links a {
+  border: none;
+  position: initial;
+  color: #f6efef;
+}
+
+#social-links li {
+  color: #efebeb;
+  border: none;
+  display: block;
+  padding: 4px 15px;
+}
+
+#social-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+

@@ -1,0 +1,16 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <a routerLink="/slider" class="close-button">X</a>
+    <div class="authBlock">
+      <h3>Gracias por registrarte.</h3>
+      <div class="formGroup" *ngIf="authService.userData as user">
+        <p class="text-center">Se ha enviado un mail a: <strong>{{user.email}}</strong>.</p>
+        <p class="text-center">Por favor, verifica tu correo y accede al enlace de registro.</p>
+      </div><br>
+      <div class="redirectToLogin">
+        <span>Volver a: <span class="redirect" style="cursor:pointer" routerLink="/sign-in"> Iniciar
+            sesión</span></span>
+      </div>
+    </div>
+  </div>
+</div>

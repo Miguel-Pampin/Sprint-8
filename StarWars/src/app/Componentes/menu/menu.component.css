@@ -1,0 +1,17 @@
+* {
+  background-color: black;
+  color: aliceblue;
+
+}
+
+.menu {
+  border: 2px;
+border-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-btn:hover {
+  border-bottom: 2px solid blue;
+}

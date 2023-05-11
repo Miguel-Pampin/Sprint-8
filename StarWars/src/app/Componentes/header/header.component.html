@@ -1,0 +1,39 @@
+<div class="navbar">
+  <div class="row justify-content-center align-items-center">
+    <div id="social-links" class="col order-first">
+      <ul class="d-flex justify-content-center">
+        <li>
+          <a href="https://www.facebook.com/StarWars" class="bi bi-facebook">
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/starwars/"
+            class="bi bi-instagram"
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/starwars" class="bi bi-twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/starwars" class="bi bi-youtube"></a>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="col mx-auto text-center">
+      <a href="/home"><img src="../assets/logo.png" alt="star wars logo" style="width: 20rem;"></a>
+    </div>
+    <div class="col col-3 auth d-flex justify-content-center">
+      <div>
+        <button class="btn btn-dark m-1 authBtn" *ngIf="!isLoggedIn" routerLink="/register-user">Registrarse</button>
+      </div>
+      <div>
+        <button class="btn btn-dark m-1 pr-3 authBtn login-button" *ngIf="!isLoggedIn" routerLink="/sign-in">Iniciar Sesión</button>
+      </div>
+      <div class="col" *ngIf="isLoggedIn">
+        <app-control></app-control>
+      </div>
+    </div>
+  </div>
+</div>

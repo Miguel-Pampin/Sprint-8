@@ -1,0 +1,10 @@
+* {
+  color: rgb(245, 244, 241);
+}
+
+.authBtn:hover {
+  border-bottom: 2px solid blue;
+}
+button{
+  white-space: nowrap;
+}

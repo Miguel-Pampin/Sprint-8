@@ -1,0 +1,37 @@
+  <div class="container my-5 d-flex justify-content-center" >
+    <div *ngIf="starship" class="card bg-dark" style="width: 40rem;">
+      <a routerLink="/starships" class="close-button">X</a>
+      <h3 class="card-title">{{ starship.name }}</h3>
+      <div class=" col-xl-8">
+        <img class="img-fluid"
+          src="{{ urlImagen }}/{{ starship | id }}.jpg"
+         
+          onerror="this.src='https://starwars-visualguide.com/assets/img/big-placeholder.jpg'"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+      <div class="d-flex flex-column text-center my-2">
+        <h5 class="card-subtitle mb-2">Model: {{ starship.model }}</h5>
+        <h5 class="card-subtitle mb-2">Starship Class: {{ starship.starship_class }}</h5>
+        <h5 class="card-subtitle mb-2">Manufacturer: {{ starship.manufacturer}}</h5>
+        <h5 class="card-subtitle mb-2">Cost: {{ starship.cost_in_credits }} CREDITS</h5>
+      </div>
+        <div class="row">
+          <div class="col-6">
+            <h6 class="card-subtitle mb-2">Crew: {{starship.crew}} </h6>
+            <h6 class="card-subtitle mb-2">Passenger Capacity: {{starship.passengers}}</h6>
+            <h6 class="card-subtitle mb-2">Cargo Capacity:  {{starship.cargo_capacity}} TONS</h6>
+            <h6 class="card-subtitle mb-2">Consumables:  {{starship.consumables}}</h6>
+            <h6 class="card-subtitle mb-2">Pilots:  </h6>
+          </div>
+          <div class="col-6">
+            <h6 class="card-subtitle mb-2">Length: {{starship.length}} Meters</h6>
+            <h6 class="card-subtitle mb-2">Maximum atmosphering speed: {{starship.max_atmosphering_speed}} KM/H</h6>
+            <h6 class="card-subtitle mb-2">Hyperdrive rating:  {{starship.hyperdrive_rating}}</h6>
+            <h6 class="card-subtitle mb-2">Maximum speed in realspace:  {{starship.MGLT}} MGLT</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

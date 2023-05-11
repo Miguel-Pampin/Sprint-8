@@ -1,0 +1,30 @@
+<div class="col-md-4  border border-4 border-dark rounded-3 d-block mx-auto m-4">
+  <div class="pass">
+    <div class="card">
+      <a routerLink="/slider" class="close-button">X</a>
+      <img class="img-fluid" src="../../../assets/login.jpg" alt="Card image cap">
+      <div class="card-body">
+        <div class="displayTable">
+          <div class="displayTableCell">
+            <div class="authBlock">
+              <h3>Restablecer contraseña</h3>
+              <p class="text-center">Por favor indica el e-mail.</p>
+              <div class="formGroup">
+                <input type="email" class="formControl m-2" placeholder="e-mail" #passwordResetEmail required>
+              </div>
+              <!-- Calling ForgotPassword from AuthService Api -->
+              <div class="formGroup">
+                <input type="submit" class="btn btnPrimary" value="Restablecer contraseña"
+                  (click)="authService.ForgotPassword(passwordResetEmail.value)">
+              </div>
+              <br>
+              <div class="redirectToLogin">
+                <span class="redirect" style="cursor:pointer" routerLink="/sign-in"> Volver a: Iniciar sesión</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

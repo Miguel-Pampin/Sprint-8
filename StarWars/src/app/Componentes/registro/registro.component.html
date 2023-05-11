@@ -1,0 +1,32 @@
+<div class="col-md-4  border border-4 border-dark rounded-3 d-block mx-auto m-4">
+  <div class="registro">
+    <div class="card">
+      <a routerLink="/slider" class="close-button">X</a>
+      <img class="img-fluid" src="../../../assets/login.jpg" alt="Card image cap">
+      <div class="card-body">
+        <div class="displayTable">
+        
+          <div class="displayTableCell">
+            <div class="authBlock">
+              <h3>Registro</h3>
+              <div class="formGroup">
+                <input type="email" class="formControl m-2" placeholder="Email Address" #userEmail required />
+              </div>
+              <div class="formGroup">
+                <input type="password" class="formControl m-2" placeholder="Password" #userPwd required />
+              </div>
+              <div class="formGroup">
+                <input type="button" class="btn btnPrimary" value="Registro"
+                  (click)="authService.SignUp(userEmail.value, userPwd.value)" />
+              </div>
+            </div>
+            <div class="redirectToLogin">
+              <span>Tienes una cuenta?
+                <span class="redirect" style="cursor:pointer" routerLink="/sign-in">Inicia sesión</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
